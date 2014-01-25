@@ -692,6 +692,16 @@ public class SwipeListViewTouchListener implements View.OnTouchListener {
     }
 
     /**
+     * Close all opened items Immediately
+     */
+    public void closeOpenedItemsImmediately() {
+        long tmpAnimDuration = animationTime;
+        animationTime = 0;
+        closeOpenedItems();
+        animationTime = tmpAnimDuration;
+    }
+
+    /**
      * @see View.OnTouchListener#onTouch(android.view.View, android.view.MotionEvent)
      */
     @Override
@@ -939,6 +949,9 @@ public class SwipeListViewTouchListener implements View.OnTouchListener {
             setTranslationX(frontView, deltaX);
         }
     }
+
+
+
 
     /**
      * Class that saves pending dismiss data

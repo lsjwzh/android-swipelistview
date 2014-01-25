@@ -6,3 +6,7 @@ target/
 .gradle
 build
 
+
+/swipelistview/gen/com/fortysevendeg/swipelistview/BuildConfig.java
+/swipelistview/gen/com/fortysevendeg/swipelistview/Manifest.java
+/swipelistview/gen/com/fortysevendeg/swipelistview/R.java
